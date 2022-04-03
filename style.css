@@ -121,3 +121,81 @@ h2 {
         margin: 20px 15px;
     }
 }
+
+@media screen and (min-width: 1100px) {
+    body {
+        width: 1040px;  
+    }
+    .section-main {
+        display: flex;
+        padding: 0;
+        margin-bottom: 80px;
+    } 
+    .section-main-content {
+        order: 0;
+        flex: 0 0 490px;
+        margin-right: 30px;
+        text-align: left;
+    }
+    .section-main-img {
+        order: 1;
+        flex: 0 0 490px;
+        margin-left: 30px;
+        text-align: center;
+    }
+    .section-button {
+        justify-content: flex-start;
+    }
+    .button {
+        margin: 0;
+    }
+    .one {
+        margin-right: 20px;
+    }
+    .line {
+        align-self: flex-start;
+        margin: 0;
+    }
+    .section-travel-agency, .section-delegate {
+        display: flex;
+    }
+    .section-travel-agency {
+        margin-bottom: 80px;
+    }
+    .section-travel-agency-content {
+        order: 1;
+        flex: 0 0 430px;
+        margin-right: 30px;
+    }
+    h2 {
+        text-align: left;
+        padding: 0;
+        margin: 40px 0 18px 0;
+    }
+    .section-travel-agency-content p, .section-delegate-content p {
+        text-align: left;
+        padding: 0;
+        margin: 0 0 40px 0;
+    }
+    .button-section {
+        order: 0;
+        flex: 0 0 550px;
+        margin: 0 30px 0 0;
+        justify-content: space-between;
+    }
+    .white-button {
+        flex: 0 0 calc((100% - 40px) / 3);
+        margin: 0;
+        padding: 40px 0;
+    }
+    .white-button img {
+        margin-top: 0;
+    }
+    .white-button p {
+        margin-bottom: 0;
+    }
+    .section-delegate-content {
+        flex: 0 0 430px;
+        margin-right: 30px;
+    }
+}
