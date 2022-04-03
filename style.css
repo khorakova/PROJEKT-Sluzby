@@ -2,7 +2,7 @@ html { box-sizing: border-box; }
 *, :after, :before { box-sizing: inherit; }
 
 body {
-    width: 550px;
+    /* width: 550px; */
     margin: 60px auto ;
     font-family: 'Montserrat', sans-serif;
     background-color: #FAFAFA;
@@ -24,7 +24,18 @@ p {
 
 .section-main h1 {
    font-size: 28px;
-   margin: 40px 0;  
+   margin: 40px 0 10px 0;
+   padding-bottom: 10px;  
+}
+
+.line {
+    border-bottom: 2px solid #407BFF; 
+    width: 60px;  
+    align-self: center;
+}
+
+.section-main p {
+    margin: 40px 0 30px 0;
 }
 
 .button {
@@ -34,16 +45,15 @@ p {
     padding: 10px 30px;
     border-radius: 20px;
     border: 0;
+    margin: 10px auto;
 }
 
 .one {
     background-color: #407BFF;
-    margin: 40px auto 10px auto;
 }
 
 .two {
     background-color: #8B8B8B;
-    margin: 10px auto 40px auto;
 }
 
 h2 {
@@ -75,5 +85,39 @@ h2 {
 }
 
 @media screen and (min-width: 640px) {
-    
+    /* body {
+        width: 770px;
+    } */
+    .section-main, h2, .description {
+        padding: 0 110px;
+    }
+
+    .section-main img {
+        width: 400px;
+        height: 332px;
+     }
+
+    .section-button {
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+        margin: 10px;
+    }
+    .button-section {
+        display: flex;
+        justify-content: center;
+    }
+    .white-button {
+        flex: 0 0 calc((100% - 80px) / 3);
+        display: block;
+        padding: 0;
+        margin: 10px;
+    }
+    .white-button img {
+        margin: 40px auto 0 auto;
+    }
+    .white-button p {
+        margin: 20px 15px;
+    }
 }
