@@ -69,6 +69,7 @@ h2 {
     font-size: 13px;
     border-radius: 10px;
     display: flex;
+    box-shadow: 0px 4px 6px #407BFF1F;
 }
 
 .section-travel-agency p, .section-delegate p {
